@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <SearchFilter/>
+    <main class="app-main">
+      <SortFilter/>
+    </main>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "@/components/Header";
+import SearchFilter from "@/components/SearchFilter";
+import Footer from "@/components/Footer";
+import SortFilter from "@/components/SortFilter";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SortFilter,
+    Header,
+    SearchFilter,
+    Footer,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+  #app {
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+  /*text-align: center;*/
+  /*color: #2c3e50;*/
+  /*margin-top: 60px;*/
 }
+
+  .app-main {
+    background-color: map_get($colors, background-primary);
+  }
+  
 </style>

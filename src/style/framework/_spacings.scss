@@ -1,0 +1,69 @@
+$content-max-width: 1032px !default;
+
+$grid-step: 4px !default;
+
+$grid-spacing: (
+        "xxs": $grid-step, // 4
+        "xs": $grid-step * 2,  // 8
+        "sm": $grid-step * 3, // 12
+        "md": $grid-step * 3.5, // 14
+        "lg": $grid-step * 5, // 20
+        "xl": $grid-step * 6, // 24
+        "xxl": $grid-step * 9, // 36
+) !default;
+
+$border-radius: (
+        "xxs": $grid-step, // 4
+        "xs": $grid-step * 2,  // 8
+        "sm": $grid-step * 3, // 12
+        "md": $grid-step * 4, // 16
+        "lg": $grid-step * 5, // 20
+        "xl": $grid-step * 6, // 24
+        "xxl": $grid-step * 7, // 28
+) !default;
+
+$line-height: (
+        "xxs": $grid-step * 3, // 12
+        "xs": $grid-step * 4,  // 16
+        "sm": $grid-step * 5, // 20
+        "md": $grid-step * 5.5, // 22
+        "lg": $grid-step * 7, // 28
+        "xl": $grid-step * 8, // 32
+        "xxl": $grid-step * 9, // 36
+) !default;
+
+$font-size: (
+        "xxs": $grid-step, // 4
+        "xs": $grid-step * 3, // 12
+        "sm": $grid-step * 3.5, // 14
+        "md": $grid-step * 4, // 16
+        "lg": $grid-step * 5, // 20
+        "xl": $grid-step * 7, // 28
+        "xxl": $grid-step * 8, // 32
+) !default;
+
+$font-weight: (
+        "bold": 700,
+        "semibold": 500,
+        "regular": 400,
+) !default;
+
+$border-radius: (
+        "xxs": $grid-step, // 4
+        "xs": $grid-step * 2,  // 8
+        "sm": $grid-step * 3, // 12
+        "md": $grid-step * 4, // 16
+        "lg": $grid-step * 5, // 20
+        "xl": $grid-step * 6, // 24
+        "xxl": $grid-step * 7, // 28
+) !default;
+
+$line-height: (
+        "xxs": $grid-step * 3, // 12
+        "xs": $grid-step * 4,  // 16
+        "sm": $grid-step * 5, // 20
+        "md": $grid-step * 5.5, // 22
+        "lg": $grid-step * 7, // 28
+        "xl": $grid-step * 8, // 32
+        "xxl": $grid-step * 9, // 36
+) !default;

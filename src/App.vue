@@ -5,9 +5,10 @@
     <main class="app-main">
       <section class="app-main__container">
         <SortFilter/>
-          <Buffer>
-            <Announcement/>
-          </Buffer>
+        <div class="body-content">
+          <Announcement/>
+          <Article/>
+        </div>
       </section>
     </main>
     <Footer/>
@@ -20,12 +21,12 @@ import SearchFilter from "@/components/SearchFilter";
 import Footer from "@/components/Footer";
 import SortFilter from "@/components/SortFilter";
 import Announcement from "@/components/Announcement";
-import Buffer from "@/ui-kit/Buffer";
+import Article from "@/components/Article";
 
 export default {
   name: 'App',
   components: {
-    Buffer,
+    Article,
     Announcement,
     SortFilter,
     Header,
@@ -46,6 +47,10 @@ export default {
   .app-main__container {
    @include layout;
     flex-direction: column;
+  }
 
+  .body-content {
+    display: flex;
+    margin: map_get($grid-spacing, xl) 0;
   }
 </style>

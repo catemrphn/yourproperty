@@ -16,7 +16,7 @@
         @include TypographyBodyMid;
         overflow: hidden;
         padding: map_get($grid-spacing, md);
-        width: 12%;
+        width: 10%;
         border: none;
         border-right: 1px solid map_get($colors, separator-primary);
         color: map_get($colors, text-primary);

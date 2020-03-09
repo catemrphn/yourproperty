@@ -19,6 +19,8 @@
                 <UiInputFilter placeholder="От" />
                 <UiInputFilter placeholder="До" />
                 <UiInputFilter placeholder="P" />
+                <UiSmallButton class="search-filter__button" :enable="false" text="Еще детали"/>
+                <UiSmallButton class="search-filter__button" :enable="true" text="Найти"/>
             </div>
         </section>
     </section>
@@ -27,10 +29,12 @@
 <script>
     import UiSelectFilter from "@/ui-kit/Ui-select-filter";
     import UiInputFilter from "@/ui-kit/Ui-Input-filter";
+    import UiSmallButton from "@/ui-kit/UiSmallButton";
 
     export default {
         name: "SearchFilter",
         components: {
+            UiSmallButton,
             UiInputFilter,
             UiSelectFilter,
         },
@@ -94,5 +98,9 @@
         text-decoration: none;
         padding: map_get($grid-spacing, sm);
         padding-left: 0;
+    }
+
+    .search-filter__button {
+        margin-left: map_get($grid-spacing, xs);
     }
 </style>

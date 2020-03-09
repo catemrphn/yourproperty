@@ -22,6 +22,7 @@
 
 <style lang="scss" scoped>
     .sortFilter {
+        @include TypographyBody1;
         border-bottom: 1px solid map_get($colors, separator-primary);
         color: map_get($colors, text-primary);
         padding-bottom: map_get($grid-spacing, xl);
@@ -35,13 +36,16 @@
     .sortFilter__title {
         display: inline-block;
         padding-right: map_get($grid-spacing, xl);
-
     }
 
     .sortFilter__link {
         color: map_get($colors, text-primary);
         text-decoration: none;
-        padding-right:map_get($grid-spacing, md) ;
+        margin-right:map_get($grid-spacing, xs);
+        padding: map_get($grid-spacing, xs);
+    }
 
+    .sortFilter__link:hover {
+        background-color: map_get($colors, background-hover-primary);
     }
 </style>

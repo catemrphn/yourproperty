@@ -55,11 +55,6 @@
 <script>
     import UiLogo from "@/ui-kit/Ui-Logo";
 
-
-    let geoIcon = require("../assets/images/geo_icon.svg");
-    let phoneIcon = require("../assets/images/phone_icon.svg");
-    let mailIcon = require("../assets/images/mail_icon.svg");
-
     export default {
         name: "Footer",
         components: {
@@ -96,17 +91,17 @@
                 ],
                 contacts: [
                     {
-                        img: geoIcon,
+                        img: require("../assets/images/geo_icon.svg"),
                         alt: "geo",
                         name: "г. Н. Новгород, пл. Лядова, 133",
                     },
                     {
-                        img: phoneIcon,
+                        img: require("../assets/images/phone_icon.svg"),
                         alt: "phone",
                         name: "8 800 333 33 33",
                     },
                     {
-                        img: mailIcon,
+                        img: require("../assets/images/mail_icon.svg"),
                         alt: "mail",
                         name: "info@mail.ru",
                     },

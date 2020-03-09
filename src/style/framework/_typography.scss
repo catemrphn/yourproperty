@@ -3,6 +3,7 @@ $font-weight: (
         "bold": 700,
         "semibold": 500,
         "regular": 400,
+        "thin": 200,
 ) !default;
 
 
@@ -16,6 +17,15 @@ $font-weight: (
   line-height: 18px;
 }
 
+@mixin TypographyHeading3 {
+  font-size: 32px;
+  line-height: 20px;
+}
+
+@mixin TypographyHeading4 {
+  font-size: 24px;
+  line-height: 20px;
+}
 
 @mixin TypographyBody1 {
   font-size: 14px;

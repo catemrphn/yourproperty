@@ -26,7 +26,7 @@
 
     .favorite__number {
         color: map_get($colors, text-secondory-inverted);
-        font-size: map_get($font-size, sm);
+        @include TypographyBody1;
     }
 </style>
 

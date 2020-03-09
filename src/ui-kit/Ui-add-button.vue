@@ -28,7 +28,7 @@
         a {
             color: map_get($colors, text-primary-inverted);
             text-decoration: none;
-            font-size: map_get($font-size, xs);
+            @include TypographyBodySmall;
         }
     }
 

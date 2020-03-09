@@ -48,10 +48,9 @@
     }
 
     .header__city {
+        @include TypographyBody1;
         color: map_get($colors, text-primary-inverted);
         text-decoration: none;
-        font-family: 'Noto Sans', sans-serif;
-        font-size: map_get($font-size, sm);
         border-bottom: 1px solid;
         padding-bottom: map_get($grid-spacing, xs);
         margin-right: 20%;

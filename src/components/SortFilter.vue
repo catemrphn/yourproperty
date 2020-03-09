@@ -6,7 +6,7 @@
                 <a class="sortFilter__link" href="#">по цене</a>
                 <a class="sortFilter__link" href="#">по дате добавления</a>
             </figure>
-            <figure>
+            <figure class="sortFilter__figure">
                 <figcaption class="sortFilter__title">Показать:</figcaption>
                 <a class="sortFilter__link" href="#">список</a>
                 <a class="sortFilter__link" href="#">на карте</a>
@@ -22,13 +22,14 @@
 
 <style lang="scss" scoped>
     .sortFilter {
-        @include layout();
         border-bottom: 1px solid map_get($colors, separator-primary);
         color: map_get($colors, text-primary);
+        padding-bottom: map_get($grid-spacing, xl);
     }
 
     .sortFilter__figure {
         margin-right: map_get($grid-spacing, xxl);
+        display: inline-block;
     }
 
     .sortFilter__title {

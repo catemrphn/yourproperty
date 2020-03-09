@@ -35,7 +35,7 @@
         border-radius: 0;
         background: transparent;
         border: 0;
-        font-size: map_get($font-size, md);
+        @include TypographyBodyMid;
         -webkit-appearance: none;
     }
 

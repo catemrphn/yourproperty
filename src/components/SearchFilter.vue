@@ -89,8 +89,8 @@
     }
 
     .search-filter__text {
+        @include TypographyBody1;
         color: map_get($colors, text-secondary);
-        font-size: map_get($font-size, sm);
         text-decoration: none;
         padding: map_get($grid-spacing, sm);
         padding-left: 0;

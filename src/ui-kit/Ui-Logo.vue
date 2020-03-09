@@ -12,13 +12,12 @@
 <style lang="scss" scoped>
 
     .logo {
-        font-family: 'BravoRG', sans-serif;
+        @include TypographyHeading1();
         display: flex;
         color: map_get($colors, text-primary-inverted);
-        font-size: map_get($font-size, lg);
 
-    em {
-        color: map_get($colors, text-acсent);
-    }
+        em {
+            color: map_get($colors, text-acсent);
+        }
     }
 </style>

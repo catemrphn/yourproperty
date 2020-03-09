@@ -3,7 +3,12 @@
     <Header/>
     <SearchFilter/>
     <main class="app-main">
-      <SortFilter/>
+      <section class="app-main__container">
+        <SortFilter/>
+          <Buffer>
+            <Announcement/>
+          </Buffer>
+      </section>
     </main>
     <Footer/>
   </div>
@@ -14,10 +19,14 @@ import Header from "@/components/Header";
 import SearchFilter from "@/components/SearchFilter";
 import Footer from "@/components/Footer";
 import SortFilter from "@/components/SortFilter";
+import Announcement from "@/components/Announcement";
+import Buffer from "@/ui-kit/Buffer";
 
 export default {
   name: 'App',
   components: {
+    Buffer,
+    Announcement,
     SortFilter,
     Header,
     SearchFilter,
@@ -28,15 +37,15 @@ export default {
 
 <style lang="scss" scoped>
   #app {
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
-  /*text-align: center;*/
-  /*color: #2c3e50;*/
-  /*margin-top: 60px;*/
 }
 
   .app-main {
     background-color: map_get($colors, background-primary);
   }
-  
+
+  .app-main__container {
+   @include layout;
+    flex-direction: column;
+
+  }
 </style>

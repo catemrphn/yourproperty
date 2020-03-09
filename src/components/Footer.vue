@@ -146,10 +146,10 @@
     }
 
     .footer__link {
-        font-size: map_get($font-size, sm);
+        @include TypographyBody1();
         color: map_get($colors, text-primary-inverted);
         text-decoration: none;
-        padding-bottom: map_get($grid-spacing, lg);
+        padding-bottom: map_get($grid-spacing, md);
     }
 
     .footer__category-links {
@@ -187,14 +187,13 @@
     }
 
     .footer__text {
-        font-size: map_get($font-size, sm);
+        @include TypographyBody1;
         color: map_get($colors, text-primary-inverted);
-        line-height: map_get($line-height, sm);
         padding-bottom: map_get($grid-spacing, sm);
     }
 
     .footer__text_sub {
-        font-size: map_get($font-size, xs);
+        @include TypographyBodySmall;
         color: map_get($colors, text-secondory-inverted);
         margin-top: map_get($grid-spacing, lg);
     }
